@@ -4,9 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hui Guo — Academic Homepage</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hui Guo — Academic Homepage" />
+  <meta property="og:description" content="Ph.D. candidate at Western University. Research in statistical machine learning, noisy label learning, and trustworthy medical AI." />
+  <meta property="og:image" content="https://hguo1728.github.io/photos_main/p1.png" />
+  <meta property="og:url" content="https://hguo1728.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   <style>
     :root {
       --serif: 'EB Garamond', Georgia, serif;
@@ -134,20 +144,22 @@
 
     /* ── Sections ── */
     section {
-      padding: 2.5rem 0;
-      border-bottom: 1px solid var(--border);
+      padding: 3.2rem 0;
+      border-bottom: 1px solid rgba(42,82,152,0.11);
     }
 
     section:last-child { border-bottom: none; }
 
     .section-label {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--light);
-      margin-bottom: 1.5rem;
-    }
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-bottom: 1.5rem;
+}
+
+
 
     .bio {
       font-size: 14.5px;
@@ -391,6 +403,7 @@
         <a href="mailto:hguo288@uwo.ca"><strong style="font-weight:500;">Email:</strong> hguo288@uwo.ca</a><br />
       </div>
 
+
       <!-- Link buttons -->
       <!-- <div class="contact-links">
         <a href="mailto:hguo288@uwo.ca">Email</a>
@@ -427,29 +440,16 @@
     imperfect supervision, and clinical reliability.
   </p>
 
-  <p class="bio" style="margin-top: 1rem;">
+  <p class="bio" style="margin-top: 1rem; color:var(--accent);">
   Available for postdoctoral positions starting <strong style="font-weight:500;">August 2026</strong>.
 </p>
+
 </section>
-
-
-
-
 
 
   <!-- ── Research Interests ── -->
   <section id="interests">
     <p class="section-label">Research interests</p>
-    <!-- <div class="tags">
-      <span class="tag">Statistical Learning Theory</span>
-      <span class="tag">Noisy Label Learning</span>
-      <span class="tag">Crowdsourced Annotation</span>
-      <span class="tag">Bayesian Statistical Theory</span>
-      <span class="tag">Nonparametric Statistics</span>
-      <span class="tag">Uncertainty Quantification</span>
-      <span class="tag">Clinical Prediction</span>
-      <span class="tag">Electronic Health Records</span>
-    </div> -->
     <div class="tags">
   <span class="tag">Statistical Machine Learning</span>
   <span class="tag">Learning with Imperfect Data</span>
@@ -462,8 +462,6 @@
   </section>
 
 
-
-
   <!-- ── Working Papers ── -->
 <section id="working-papers">
   <p class="section-label">Working papers</p>
@@ -472,27 +470,17 @@
     <li class="pub">
       <p class="pub-title">
         Instance-Dependent Bayesian Modeling and Robust Training with Crowdsourced Noisy Data.
-        <span class="badge" style="background:#eef3fb;color:#2a5298;">Working</span>
+        <span class="badge" style="background:#eef3fb;color:#2a5298;">In preparation</span>
       </p>
-      <p class="pub-authors"><strong>Hui Guo</strong>, Grace Y. Yi</p>
-      <!-- <p class="pub-venue">Submitted to Journal / Conference Name.</p>
-      <div class="pub-links">
-        <a href="#">preprint</a>
-        <a href="#">code</a>
-      </div> -->
+      <p class="pub-authors"><strong style="font-weight:500;box-shadow: inset 0 -0.12em 0 rgba(42,82,152,0.22);">Hui Guo</strong>, Grace Y. Yi</p>
     </li>
 
     <li class="pub">
       <p class="pub-title">
         Reliability-Aware Longitudinal Clinical Prediction from Multimodal Electronic Health Records.
-        <span class="badge" style="background:#eef3fb;color:#2a5298;">Working</span>
+        <span class="badge" style="background:#eef3fb;color:#2a5298;">In preparation</span>
       </p>
-      <p class="pub-authors"><strong>Hui Guo</strong>, Yi Wan, Boyu Wang, Grace Y. Yi</p>
-      <!-- <p class="pub-venue">Submitted to Journal / Conference Name.</p>
-      <div class="pub-links">
-        <a href="#">preprint</a>
-        <a href="#">code</a>
-      </div> -->
+      <p class="pub-authors"><strong style="font-weight:500;box-shadow: inset 0 -0.12em 0 rgba(42,82,152,0.22);">Hui Guo</strong>, Yi Wan, Boyu Wang, Grace Y. Yi</p>
     </li>
 
     <li class="pub">
@@ -500,17 +488,10 @@
         Dual-Granularity Learning for Regression with Continuous Noisy Labels.
         <span class="badge" style="background:#eef3fb;color:#2a5298;">Under review</span>
       </p>
-      <!-- <p class="pub-authors"><strong>Hui Guo</strong>, Boyu Wang, Grace Y. Yi</p> -->
-      <!-- <p class="pub-venue">Submitted to Journal / Conference Name.</p>
-      <div class="pub-links">
-        <a href="#">preprint</a>
-        <a href="#">code</a>
-      </div> -->
     </li>
 
   </ul>
 </section>
-
 
 
   <!-- ── Publications ── -->
@@ -522,7 +503,7 @@
         <p class="pub-title">
           Addressing both Variable Selection and Misclassified Responses with Parametric and Semiparametric methods.
         </p>
-        <p class="pub-authors"><strong>Hui Guo</strong>, Grace Y. Yi, Boyu Wang</p>
+        <p class="pub-authors"><strong style="font-weight:500;box-shadow: inset 0 -0.12em 0 rgba(42,82,152,0.22);">Hui Guo</strong>, Grace Y. Yi, Boyu Wang</p>
         <p class="pub-venue">Bernoulli, <span class="year">2026.</span></p>
         <div class="pub-links">
           <a href="https://projecteuclid.org/journals/bernoulli/volume-32/issue-2/Addressing-both-variable-selection-and-misclassified-responses-with-parametric-and/10.3150/25-BEJ1907.short">paper</a>
@@ -533,7 +514,7 @@
 
       <li class="pub">
         <p class="pub-title">Revisiting Source-Free Domain Adaptation: a New Perspective via Uncertainty Control</p>
-        <p class="pub-authors">Gezheng Xu*, <strong>Hui Guo</strong>*, Li Yi, Charles Ling, Boyu Wang, Grace Y. Yi</p>
+        <p class="pub-authors">Gezheng Xu*, <strong style="font-weight:500;box-shadow: inset 0 -0.12em 0 rgba(42,82,152,0.22);">Hui Guo</strong>*, Li Yi, Charles Ling, Boyu Wang, Grace Y. Yi</p>
         <p class="pub-venue">International Conference on Learning Representations (ICLR), <span class="year">2025.</span></p>
         <p style="font-size:12px;color:var(--light);margin-top:2px;">* Equal contribution</p>
         <div class="pub-links">
@@ -545,7 +526,7 @@
 
       <li class="pub">
         <p class="pub-title">Learning from Noisy Labels via Conditional Distributionally Robust Optimization</p>
-        <p class="pub-authors"><strong>Hui Guo</strong>, Grace Y. Yi, Boyu Wang</p>
+        <p class="pub-authors"><strong style="font-weight:500;box-shadow: inset 0 -0.12em 0 rgba(42,82,152,0.22);">Hui Guo</strong>, Grace Y. Yi, Boyu Wang</p>
         <p class="pub-venue">Neural Information Processing Systems (NeurIPS), <span class="year">2024.</span></p>
         <div class="pub-links">
           <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/96af549bb29d01b1713e88e5c3899ceb-Paper-Conference.pdf">paper</a>
@@ -557,7 +538,7 @@
 
       <li class="pub">
         <p class="pub-title">Physician Effects in Critical Care: A Causal Inference Approach Through Propensity Weighting with Parametric and Super Learning Methods</p>
-        <p class="pub-authors">Yuan Bian, Yu Shi, <strong>Hui Guo</strong>, Grace Y. Yi, Wenqing He</p>
+        <p class="pub-authors">Yuan Bian, Yu Shi, <strong style="font-weight:500;box-shadow: inset 0 -0.12em 0 rgba(42,82,152,0.22);">Hui Guo</strong>, Grace Y. Yi, Wenqing He</p>
         <p class="pub-venue">Journal of Data Science, <span class="year">2024.</span></p>
         <div class="pub-links">
           <a href="https://jds-online.org/journal/JDS/article/1376/info">paper</a>
@@ -566,7 +547,7 @@
 
       <li class="pub">
         <p class="pub-title">Label Correction of Crowdsourced Noisy Annotations with an Instance-Dependent Noise Transition Model</p>
-        <p class="pub-authors"><strong>Hui Guo</strong>, Boyu Wang, Grace Y. Yi</p>
+        <p class="pub-authors"><strong style="font-weight:500;box-shadow: inset 0 -0.12em 0 rgba(42,82,152,0.22);">Hui Guo</strong>, Boyu Wang, Grace Y. Yi</p>
         <p class="pub-venue">Neural Information Processing Systems (NeurIPS), <span class="year">2023.</span></p>
         <div class="pub-links">
           <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/015a8c69bedcb0a7b2ed2e1678f34399-Paper-Conference.pdf">paper</a>
@@ -608,36 +589,74 @@
     Outside of work, I enjoy photography (both digital 📷 and film 🎞️!).
   </p>
 
-  <!-- <div class="hobbies-list" style="margin-bottom: 1.25rem;">
-    <span class="hobby-tag">Photography</span>
-    <span class="hobby-tag">Hiking</span>
-    <span class="hobby-tag">Reading</span>
-    <span class="hobby-tag">Your hobby</span>
-  </div> -->
-
   <details>
     <summary style="font-size:13px;color:var(--muted);cursor:pointer;user-select:none;margin-bottom:1rem;">
       View photos
     </summary>
     <div class="photo-grid">
-    <div class="photo-item"><img src="photos_hobby/img1.JPG" /></div>
-    <div class="photo-item"><img src="photos_hobby/img2.JPG" /></div>
-    <div class="photo-item"><img src="photos_hobby/img3.JPG" /></div>
-    <div class="photo-item"><img src="photos_hobby/img4.JPG" /></div>
-    <div class="photo-item"><img src="photos_hobby/img5.JPG" /></div>
-    <div class="photo-item"><img src="photos_hobby/img6.JPG" /></div>
-    <div class="photo-item"><img src="photos_hobby/img7.JPG" /></div>
-    <!-- <div class="photo-item"><img src="photos_hobby/img8.JPG" /></div> -->
-    <div class="photo-item"><img src="photos_hobby/img9.JPG" /></div>
-    <!-- <div class="photo-item"><img src="photos_hobby/img10.JPG" /></div> -->
-    <div class="photo-item"><img src="photos_hobby/img11.JPG" /></div>
-    <div class="photo-item"><img src="photos_hobby/img12.JPG" /></div>
-    <div class="photo-item"><img src="photos_hobby/img13.JPG" /></div>
-    <div class="photo-item"><img src="photos_hobby/img14.JPG" /></div>
+      <div class="photo-item">
+        <a href="photos_hobby/img1.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img1.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img2.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img2.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img3.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img3.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img4.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img4.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img5.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img5.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img6.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img6.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img7.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img7.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img9.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img9.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img11.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img11.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img12.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img12.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img13.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img13.JPG" />
+        </a>
+      </div>
+      <div class="photo-item">
+        <a href="photos_hobby/img14.JPG" class="glightbox" data-gallery="photos">
+          <img src="photos_hobby/img14.JPG" />
+        </a>
+      </div>
     </div>
   </details>
 </section>
-  
 
   <!-- ── Contact ── -->
   <section id="contact">
@@ -654,6 +673,11 @@
 <footer>
   Last updated May 2026 &nbsp;·&nbsp; Built with plain HTML &amp; CSS
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  GLightbox({ selector: '.glightbox' });
+</script>
 
 </body>
 </html>
